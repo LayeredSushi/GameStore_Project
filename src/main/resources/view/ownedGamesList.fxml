@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Library" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainGroup.projectCore.controller.OwnedGamesList">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="469.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeToStore" text="Store" />
+            <VBox fx:id="gamesList" layoutX="13.0" layoutY="59.0" prefHeight="300.0" prefWidth="572.0" spacing="10.0" />
+            <Button layoutX="41.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeToLog" text="Log out" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>

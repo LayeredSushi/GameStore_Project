@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="502.0" text="Payment" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainGroup.projectCore.controller.Payment">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="42.0" layoutY="44.0" text="Credit card number" />
+            <TextField fx:id="creditField" layoutX="42.0" layoutY="65.0" />
+            <TextField fx:id="nameField" layoutX="42.0" layoutY="153.0" />
+            <TextField fx:id="billingField" layoutX="42.0" layoutY="242.0" />
+            <TextField fx:id="surnameField" layoutX="289.0" layoutY="153.0" />
+            <ComboBox fx:id="monthCombo" layoutX="289.0" layoutY="65.0" prefHeight="31.0" prefWidth="87.0" />
+            <ComboBox fx:id="yearCombo" layoutX="383.0" layoutY="65.0" prefHeight="31.0" prefWidth="92.0" />
+            <Label layoutX="42.0" layoutY="132.0" text="Name" />
+            <Label layoutX="42.0" layoutY="221.0" text="Billing address" />
+            <Label layoutX="289.0" layoutY="132.0" text="Surname" />
+            <Label layoutX="289.0" layoutY="44.0" text="Expiration date" />
+            <Button layoutX="409.0" layoutY="242.0" mnemonicParsing="false" onAction="#changeToConfirmation" text="Submit" />
+            <Button layoutX="338.0" layoutY="242.0" mnemonicParsing="false" onAction="#changeToCart" text="Back" />
+            <Label fx:id="errorLabel" layoutX="331.0" layoutY="211.0" textFill="RED" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
